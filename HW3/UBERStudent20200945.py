@@ -101,3 +101,25 @@ with open(sys.argv[2], "wt") as f:
 		f.write(",")
 		f.write(str(thu[key][2]))
 		f.write("\n")
+	for key in fri.keys():
+		f.write(key)
+		f.write(",FRI ")
+		f.write(str(fri[key][1]))
+		f.write(",")
+		f.write(str(fri[key][2]))
+		f.write("\n")
+	for key in sat.keys():
+		f.write(key)
+		f.write(",SAT ")
+		f.write(str(sat[key][1]))
+		f.write(",")
+		f.write(str(sat[key][2]))
+		f.write("\n")
+	for key in sun.keys():
+		f.write(key)
+		f.write(",SUN ")
+		f.write(str(sun[key][1]))
+		f.write(",")
+		f.write(str(sun[key][2]))
+		f.write("\n")
+
